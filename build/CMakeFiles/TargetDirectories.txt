@@ -1,0 +1,3 @@
+C:/Users/etsel/Desktop/SDR/LinuxDriver/build/CMakeFiles/LinuxDriver.dir
+C:/Users/etsel/Desktop/SDR/LinuxDriver/build/CMakeFiles/edit_cache.dir
+C:/Users/etsel/Desktop/SDR/LinuxDriver/build/CMakeFiles/rebuild_cache.dir
