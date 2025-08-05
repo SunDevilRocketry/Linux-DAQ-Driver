@@ -7,7 +7,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 project(LinuxDriver LANGUAGES CXX)
 
 # SOURCES
-set(SOURCES main.cpp)
+file(GLOB_RECURSE SOURCES
+    "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/*.c"
+)
 
 # EXECUTABLE
 add_executable(LinuxDriver ${SOURCES})
+
+# INCLUDES
+target_include_directories(LinuxDriver PRIVATE
+    "${CMAKE_CURRENT_SOURCE_DIR}/../inc"
+)
