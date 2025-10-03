@@ -2,11 +2,8 @@
 
 class BaseDeviceController {
     public:
-        float virtual get_voltage() {}
-        float virtual get_current() {}
-        float virtual get_pressure() {}
-        float virtual get_flow_pressure() {}
+        
+        void virtual read_address(uint32_t address, uint32_t data, void* output) {}
+        void virtual write_address(uint32_t address, uint32_t data) {}
 
-        void virtual command_poll_loop() {}
-        void virtual command_execute(uint8_t command) {}
 };
