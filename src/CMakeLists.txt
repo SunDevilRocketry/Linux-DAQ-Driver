@@ -1,5 +1,8 @@
-add_library(base 
-    src.cpp 
-    ../inc/src.hpp)
+add_library(daq 
+    LJDriver.cpp 
+    ../inc/LJDriver.hpp
+    NIDriver.cpp 
+    ../inc/NIDriver.hpp
+    )
 
-target_include_directories(base PUBLIC ../inc)
+target_include_directories(daq PUBLIC ../inc)

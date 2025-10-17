@@ -1,4 +1,4 @@
-#include "src.hpp"
+#include "LJDriver.hpp"
 #include <iostream>
 
 using namespace std;
