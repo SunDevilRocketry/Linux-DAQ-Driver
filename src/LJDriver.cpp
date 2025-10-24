@@ -8,7 +8,7 @@ LJDriver::~LJDriver(){
     if (driver == nullptr) return;
     close();
     driver == nullptr;
-    free(driver);
+    delete driver;
 }
 
 LJStatus LJDriver::connect(const char* id){
