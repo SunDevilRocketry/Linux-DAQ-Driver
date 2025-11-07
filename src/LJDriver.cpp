@@ -59,7 +59,7 @@ LJStatus LJDriver::close(){
     } else return FAILED;
 }
 
-LJStatus LJDriver::read_address(uint32_t address, uint32_t data, void* output){
+LJStatus LJDriver::read_address(uint32_t address, void* output){
     if (!is_connected()) return FAILED;
     
     int err = LJM_eReadAddress(driver->handle, address, LJM_FLOAT32, (double*) output);

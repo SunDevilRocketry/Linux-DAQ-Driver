@@ -27,7 +27,7 @@ class LJDriver {
         LJStatus list_devices(std::vector<LJInfo> &output);
         LJStatus connect(const char* id);
         LJStatus close();
-        LJStatus read_address(uint32_t address, uint32_t data, void* output);
+        LJStatus read_address(uint32_t address, void* output);
         LJStatus write_address(uint32_t address, uint32_t data);
 
     private:
