@@ -6,3 +6,4 @@ add_library(daq
     )
 
 target_include_directories(daq PUBLIC ../inc)
+target_link_libraries(daq LabJackM)
