@@ -1,5 +1,5 @@
 #include <cstdint>
-#include <LabJackM.h>
+//#include <LabJackM.h>
 
 class BaseDeviceController {
     public:
